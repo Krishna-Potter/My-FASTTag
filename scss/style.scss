@@ -20,34 +20,137 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 // landing page
-.landing-content p {
-  color: $text-color;
-  text-transform: capitalize;
-  font-style: italic;
-  font-size: 2rem;
-  font-weight: 600;
+.landing-content {
+  p {
+    color: $text-color;
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  img {
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+  }
 }
 
-.landing-content img {
-  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+.landing-start-btn {
+  a {
+    background-color: $orange;
+    color: $text-color;
+    padding: 8px 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 0.8px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  :hover {
+    background-color: $secondary-blue;
+    transition: 0.3s ease-in;
+  }
 }
 
-.landing-start-btn a {
-  background-color: $orange;
-  color: $text-color;
-  padding: 8px 20px;
-  font-weight: 600;
-  font-size: 1rem;
-  text-decoration: none;
-  text-transform: lowercase;
-  letter-spacing: 0.8px;
-  border: none;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.landing-content a:hover {
+// signup page
+.frame {
   background-color: $secondary-blue;
-  transition: 0.3s ease-in;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.frame-header {
+  h3 {
+    color: $text-color;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+  }
+}
+
+form {
+  padding: 2% 5% 5% 5%;
+  button {
+    background-color: $orange;
+    color: $text-color;
+    width: 100%;
+    padding: 2% 0%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    outline: none;
+  }
+}
+
+.form-ctrl {
+  position: relative;
+  margin-bottom: 2%;
+  input {
+    color: #000;
+    caret-color: $blue;
+    display: block;
+    width: 100%;
+    padding: 1.8%;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    outline: none;
+  }
+  i {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.3rem;
+    visibility: hidden;
+  }
+  small {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    visibility: hidden;
+  }
+}
+
+.form-ctrl.success {
+  input {
+    border-radius: 3px;
+    border: 2px solid #009432 !important;
+  }
+  .fa-check {
+    visibility: visible;
+    color: #009432;
+  }
+  small {
+    visibility: visible;
+    color: #009432;
+  }
+}
+
+.form-ctrl.error {
+  input {
+    border-radius: 3px;
+    border: 2px solid #c0392b !important;
+  }
+  .fa-circle-exclamation {
+    visibility: visible;
+    color: #c0392b;
+  }
+  small {
+    visibility: visible;
+    color: #c0392b;
+  }
 }

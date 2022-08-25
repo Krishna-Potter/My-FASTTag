@@ -10,6 +10,12 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .landing-content p {
   color: #e2eff6;
   text-transform: capitalize;
@@ -17,7 +23,6 @@ body {
   font-size: 2rem;
   font-weight: 600;
 }
-
 .landing-content img {
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
@@ -35,8 +40,95 @@ body {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
-.landing-content a:hover {
+.landing-start-btn :hover {
   background-color: #6694ba;
   transition: 0.3s ease-in;
+}
+
+.frame {
+  background-color: #6694ba;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.frame-header h3 {
+  color: #e2eff6;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+}
+
+form {
+  padding: 2% 5% 5% 5%;
+}
+form button {
+  background-color: #ff9737;
+  color: #e2eff6;
+  width: 100%;
+  padding: 2% 0%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.form-ctrl {
+  position: relative;
+  margin-bottom: 2%;
+}
+.form-ctrl input {
+  color: #000;
+  caret-color: #3d75a5;
+  display: block;
+  width: 100%;
+  padding: 1.8%;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  outline: none;
+}
+.form-ctrl i {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.3rem;
+  visibility: hidden;
+}
+.form-ctrl small {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  visibility: hidden;
+}
+
+.form-ctrl.success input {
+  border-radius: 3px;
+  border: 2px solid #009432 !important;
+}
+.form-ctrl.success .fa-check {
+  visibility: visible;
+  color: #009432;
+}
+.form-ctrl.success small {
+  visibility: visible;
+  color: #009432;
+}
+
+.form-ctrl.error input {
+  border-radius: 3px;
+  border: 2px solid #c0392b !important;
+}
+.form-ctrl.error .fa-circle-exclamation {
+  visibility: visible;
+  color: #c0392b;
+}
+.form-ctrl.error small {
+  visibility: visible;
+  color: #c0392b;
 }/*# sourceMappingURL=style.css.map */
