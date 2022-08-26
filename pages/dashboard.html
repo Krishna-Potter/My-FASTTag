@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My FASTTag Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../scss/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-4 d-none d-sm-block sidebar">
+          <div class="sidebar-header">
+            <img
+              src="../images/fasttag-logo.png"
+              alt="My FASTTag logo"
+              class="img-fluid"
+              width="200"
+              height="auto"
+            />
+            <hr />
+          </div>
+          <ul>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-house-heart-fill d-inline-block"
+                viewBox="0 0 16 16"
+                style="color: #fff; margin-top: -3%"
+              >
+                <path
+                  d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707L7.293 1.5Z"
+                />
+                <path
+                  d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9.293Zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018Z"
+                />
+              </svg>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-file-person-fill"
+                viewBox="0 0 16 16"
+                style="color: #fff; margin-top: -3%"
+              >
+                <path
+                  d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"
+                />
+              </svg>
+              <a href="#">Profile</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-8 profile-content">
+          <div class="row">
+            <div class="profile-header">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                fill="currentColor"
+                class="bi bi-list d-block d-sm-none"
+                viewBox="0 0 16 16"
+                style="color: #000; position: absolute"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+              <h3>welcome krishna!</h3>
+            </div>
+          </div>
+          <div class="row g-1 pt-2 amount-frame">
+            <div class="col-lg-3 col-md-5 frame-one">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+              <h2>100</h2>
+              <span class="text-secondary">total amount</span>
+              <button>add amount</button>
+            </div>
+            <div class="col-lg-3 col-md frame-two ms-lg-3 ms-md-2 mt-sm-2">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+              <h2>0</h2>
+              <span class="text-secondary">paid toll amount</span>
+              <button>pay toll</button>
+            </div>
+            <div class="col-lg frame-three ms-lg-3 mt-md-2 mt-sm-2">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+              <h2>0</h2>
+              <span class="text-secondary">total amount paid for toll</span>
+              <label>note : more then pay for toll per -15Rs only </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

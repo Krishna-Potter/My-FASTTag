@@ -131,4 +131,151 @@ form button {
 .form-ctrl.error small {
   visibility: visible;
   color: #c0392b;
+}
+
+.sidebar {
+  background-color: #fff;
+  padding: 2%;
+  height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+}
+.sidebar ul li {
+  list-style-type: none;
+  background-color: #1e4565;
+  cursor: pointer;
+  padding: 4%;
+  margin-bottom: 4%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.sidebar ul li a {
+  color: #e2eff6;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  margin-left: 2%;
+}
+
+.profile-content {
+  height: 100vh;
+}
+
+.profile-header {
+  background-color: #fff;
+  padding: 2.5%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.profile-header h3 {
+  color: #3d75a5;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  text-align: right;
+}
+
+.amount-frame .frame-one {
+  background-color: #fff;
+  min-height: 180px;
+  padding: 2%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.amount-frame .frame-one span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.amount-frame .frame-one i {
+  font-size: 2.5rem;
+}
+.amount-frame .frame-one h2 {
+  display: inline-block;
+  font-size: 3rem;
+}
+.amount-frame .frame-one button {
+  float: right;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 2% 6%;
+  margin-top: 8%;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 3px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.amount-frame .frame-two {
+  background-color: #fff;
+  min-height: 180px;
+  padding: 2%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.amount-frame .frame-two span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.amount-frame .frame-two i {
+  font-size: 2.5rem;
+}
+.amount-frame .frame-two h2 {
+  display: inline-block;
+  font-size: 3rem;
+}
+.amount-frame .frame-two button {
+  float: right;
+  background-color: #d35400;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 2% 6%;
+  margin-top: 8%;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 3px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.amount-frame .frame-three {
+  background-color: #fff;
+  min-height: 180px;
+  padding: 2%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.amount-frame .frame-three span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.amount-frame .frame-three label {
+  color: #c23616;
+  display: block;
+  font-size: 0.9rem;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: 600;
+  margin-top: 5%;
+}
+.amount-frame .frame-three i {
+  font-size: 2.5rem;
+}
+.amount-frame .frame-three h2 {
+  display: inline-block;
+  font-size: 3rem;
 }/*# sourceMappingURL=style.css.map */

@@ -12,6 +12,7 @@ const confirmPassword = document.getElementById("confirmPassword");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   checkInput();
+  window.location.href = "../pages/dashboard.html";
 });
 
 //   checking function
@@ -93,3 +94,4 @@ function setSuccess(input, message) {
   formControl.className = "form-ctrl success";
   small.innerText = message;
 }
+
