@@ -41,7 +41,7 @@ function checkInput() {
   // email
   if (mailValue === "") {
     setError(mail, "this field cannot be blank");
-  } else if (!isEmail) {
+  } else if (!isEmail(mailValue)) {
     setError(mail, "enter valid email-id");
   } else {
     setSuccess(mail, "valid email-id");
@@ -66,16 +66,16 @@ function checkInput() {
   // confirm password
   if (confirmPasswordValue === "") {
     setError(confirmPassword, "this field cannot be blank");
-  } else if (passwordValue == confirmPasswordValue) {
+  } else if (passwordValue != confirmPasswordValue) {
     setError(confirmPassword, "enter correct password");
   } else {
     setSuccess(confirmPassword, "password are correct");
   }
 }
 
-//   check emial function
-function isEmail() {
-  return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+//   check email function
+function isEmail(mail) {
+  return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(mail);
 }
 
 //   check error function
